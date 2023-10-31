@@ -11,7 +11,7 @@ $('.topic-toggle').click(() => {
     $('.topic').show();
     $('.topic-toggle').css('color', '#ffff');
     $('.formula').hide();
-    $('.dictionary').hide();
+    $('#dictionary-cont').hide();
 
     $('.dictionary-toggle').css('color', '');
     $('.formula-toggle').css('color', '');
@@ -21,7 +21,7 @@ $('.formula-toggle').click(() => {
     $('.formula-toggle').css('color', '#ffff');
     $('.formula').show();
     $('.topic').hide();
-    $('.dictionary').hide();
+    $('#dictionary-cont').hide();
     
     $('.dictionary-toggle').css('color', '');
     $('.topic-toggle').css('color', '');
