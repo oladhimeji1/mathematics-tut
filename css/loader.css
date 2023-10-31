@@ -1,0 +1,55 @@
+:root{
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+}
+
+body{
+  font-family: 'Ralway';
+}
+.loaderx{
+    margin: auto;
+    color: white;
+    padding: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #017DBA;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loader-container{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.loadery{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.476);
+}
+.loader{
+    margin: 2px auto;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    animation: rotatex 1s infinite linear;
+}
+@keyframes rotatex {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

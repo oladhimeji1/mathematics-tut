@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>||</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ralway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loadery">
+            <div class="loaderx">
+                <div class="loader"></div>
+                <p>Loading, pleass wait...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="heading">
+        <p>Hello, welcome</p>
+        <img src="./img/WasFav.png" alt="School logo">
+    </div>
+
+    <h2 class="tophead">Contents</h2>
+
+    <hr>
+
+    <div id="back-arrow" class="back-arrow">
+        <i id="fa" class="fa fa-long-arrow-left"></i>
+        <span id="topic" class="topic">Surd</span>
+        <div></div>
+    </div>
+    
+
+    <div class="contents" id="contents">
+        <div class="topic" id="topic">
+            <p class="sub-head">Topics <i class="fa fa-list"></i></p>
+            <div class="topics" id="topics">
+                <!-- <li>Surd</li>
+                <li>Indices</li>
+                <li>Simultenous Equation</li>
+                <li>Power</li>
+                <li>Elimination</li> -->
+            </div>
+        </div>
+        
+        <div class="formula" id="formula">
+            <p class="sub-head">Formula Book <i class="fas fa-sqare-root"></i></p>
+            <div class="formula" id="formula">
+                <!-- <li>Surd</li>
+                <li>Indices</li> -->
+            </div>
+        </div>
+        
+        <div class="dictionar" id="dictionary-cont">
+            <p class="sub-head">Dictionary <i class="fa fa-book"></i></p>
+
+            <div class="serach-container">
+                <label for="">Enter a keyword</label>
+                <input type="text" id="user-input" placeholder="Enter a mathematical keyword">
+                <button class="btn">Search <i class="fa fa-search"></i></button>    
+            </div>
+
+            <hr>
+
+            <div class="meaning">
+                <h3 id="title" class="title">Equation</h3>
+                <p>Meaning:</p>
+
+                <div id="mean" class="mean"></div>
+                <!-- <li class="mean">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nemo laudantium, dolor commodi, veritatis nobis reprehenderit quas quo, numquam neque libero magni in dolorum ut similique quae fuga. Ut, numquam.</li>
+                <li class="mean">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nemo laudantium, dolor commodi, veritatis nobis reprehenderit quas quo, numquam neque libero magni in dolorum ut similique quae fuga. Ut, numquam.</li>
+                <li class="mean">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nemo laudantium, dolor commodi, veritatis nobis reprehenderit quas quo, numquam neque libero magni in dolorum ut similique quae fuga. Ut, numquam.</li> -->
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- Embeded PDFs -->
+    <div class="emb" id="0">
+        <embed src="./pdf/surds.pdf#toolbar=0&scrollbar=1" type="application/pdf">
+    </div>
+    <div class="emb" id="1">
+        <embed src="./pdf/indicespowers.pdf#toolbar=0&scrollbar=1" type="application/pdf">
+    </div>
+    <div class="emb" id="2">
+        <embed src="./pdf/factorisingquadratics.pdf#toolbar=0&scrollbar=1" type="application/pdf">
+    </div>
+    <div class="emb" id="3">
+        <embed src="./pdf/completingsquare.pdf#toolbar=0&scrollbar=1" type="application/pdf">
+    </div>
+    <div class="emb" id="4">
+        <embed src="./pdf/quadeqns.pdf#toolbar=0&scrollbar=1" type="application/pdf">
+    </div>
+    
+    <div class="footer">
+        <div class="topic-toggle">
+            <i class="fa fa-list"></i>
+            <p id="topic">Topics </p>
+        </div>
+        <div class="formula-toggle">
+            <i class="fas fa-sqare-root"></i>
+            <p id="formula">Formula Book</p>
+        </div>
+        <div class="dictionary-toggle">
+            <i class="fa fa-book"></i>
+            <p id="dictionary">Dictionary</p>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
