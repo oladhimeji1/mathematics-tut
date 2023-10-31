@@ -11,6 +11,8 @@ $('document').ready(() => {
 });
 
 $('.topic-toggle').click(() => {
+    $('li').slideDown(500);
+    $('.emb').slideUp(500);
     $('.topic').show();
     $('.topic-toggle').css('color', '#ffff');
     $('.formula').hide();
@@ -21,6 +23,8 @@ $('.topic-toggle').click(() => {
 })
 
 $('.formula-toggle').click(() => {
+    $('li').slideDown(500);
+    $('.emb').slideUp(500);
     $('.formula-toggle').css('color', '#ffff');
     $('.formula').show();
     $('.topic').hide();
@@ -31,6 +35,8 @@ $('.formula-toggle').click(() => {
 })
 
 $('.dictionary-toggle').click(() => {
+    $('li').slideDown(500);
+    $('.emb').slideUp(500);
     $('.dictionary-toggle').css('color', '#ffff');
     $('#dictionary-cont').show();
     $('.formula').hide();
