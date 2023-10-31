@@ -1,6 +1,9 @@
 const topicsx = document.getElementById('topics');
+const formulax = document.getElementById('formula');
 
 const topics = ['Surd', 'Indices', 'Factorizing', 'Completing Square', 'Quadratic Equation'];
+const formulas = ['Maths Fomula Handbook', '1300 Maths Fomulas'];
+
 
 $('document').ready(() => {
     $('.topic').show();
@@ -43,14 +46,27 @@ topics.map((topic, index) => {
     topicsx.appendChild(element);
     element.addEventListener('click', () => logg(index, topic))
 });
+formulas.map((formula, index) => {
+    const element = document.createElement('div');
+    element.innerHTML += `<li>${formula}</li>`;
+
+    formulax.appendChild(element);
+    element.addEventListener('click', () => formulaLogg(index, formula))
+});
 
 function logg(a, b){
-    console.log(a,b)
     $(`#${a}`).slideDown(300);
     $('li').slideUp(500);
     $('.sub-head').hide();
     document.getElementById('back-arrow').style.display = 'flex';
-    $('#topic').html(b);
+    $('#display-title').html(b);
+}
+function formulaLogg(a, b){
+    $(`#${a + 5}`).slideDown(300);
+    $('li').slideUp(500);
+    $('.sub-head').hide();
+    document.getElementById('back-arrow').style.display = 'flex';
+    $('#display-title').html(b);
 }
 $('#fa').click(() =>{
     $('li').slideDown(500);
