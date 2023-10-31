@@ -59,10 +59,10 @@ embed{
     width: 100%;
     height: 70vh;
     background-color: white;
-    overflow: auto;
+    overflow-y: scroll;
 }
 .emb{
-    overflow: auto;
+    overflow-y: scroll;
     background-color: red;
     width: 100%;
     height: 100%;
