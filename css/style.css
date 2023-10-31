@@ -72,7 +72,7 @@ embed{
 .footer{
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -80,6 +80,7 @@ embed{
     font-size: 13px;
     padding: 10px;
     z-index: 99999999999;
+    position: fixed;
 }
 .footer div{
     text-align: center;

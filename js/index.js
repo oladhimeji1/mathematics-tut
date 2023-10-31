@@ -3,9 +3,8 @@ const topicsx = document.getElementById('topics');
 const topics = ['Surd', 'Indices', 'Factorizing', 'Completing Square', 'Quadratic Equation'];
 
 $('document').ready(() => {
-    // $('.topic').show();
+    $('.topic').show();
     $('.topic-toggle').css('color', '#ffff');
-    $('#dictionary-cont').show();
 });
 
 $('.topic-toggle').click(() => {
